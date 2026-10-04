@@ -1,0 +1,45 @@
+{
+  "name": "langchain-course",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Hands-on LangChain.js v1 course - 10 runnable lessons",
+  "scripts": {
+    "10": "tsx --env-file-if-exists=.env src/10-capstone-cli.ts",
+    "lesson": "tsx --env-file-if-exists=.env",
+    "01": "tsx --env-file-if-exists=.env src/01-first-call.ts",
+    "02": "tsx --env-file-if-exists=.env src/02-messages.ts",
+    "03": "tsx --env-file-if-exists=.env src/03-streaming.ts",
+    "04": "tsx --env-file-if-exists=.env src/04-structured-output.ts",
+    "05": "tsx --env-file-if-exists=.env src/05-tools.ts",
+    "06": "tsx --env-file-if-exists=.env src/06-agent.ts",
+    "07": "tsx --env-file-if-exists=.env src/07-memory.ts",
+    "08": "tsx --env-file-if-exists=.env src/08-rag.ts",
+    "09": "tsx --env-file-if-exists=.env src/09-graph.ts",
+    "chat": "npm run 10",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@langchain/anthropic": "^1.5.12",
+    "@langchain/classic": "^1.0.52",
+    "@langchain/core": "^1.2.14",
+    "@langchain/google-genai": "^2.3.2",
+    "@langchain/langgraph": "^1.4.19",
+    "@langchain/ollama": "^1.3.0",
+    "@langchain/openai": "^1.6.2",
+    "@langchain/textsplitters": "^1.0.2",
+    "langchain": "^1.5.15",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.7.0"
+  },
+  "packageManager": "pnpm@10.17.1",
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}
